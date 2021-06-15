@@ -2,10 +2,9 @@
   width: 500px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
-  margin-bottom: 50px;
+  margin-top: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 15px 20px 30px 20px;
+  padding: 15px 20px 15px 20px;
   background: #071013;
   border-radius: 5px;
 }
@@ -16,12 +15,12 @@
   margin-right: auto;
 }
 
-.loginBtn {
+.registerBtn {
   width: 100%;
   background-color: #eb345c !important;
   border: #ee2e58;
 }
 
-.loginBtn:hover {
-  background-color: #e20434 !important;
+.registerBtn:hover {
+  background-color: #ce2332 !important;
 }

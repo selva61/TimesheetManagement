@@ -8,20 +8,22 @@
           width="100"
           alt="user"
         />
-        <h3 class="text-center pb-2">Sentinals</h3>
-        <p class="text-center">Log in to time-sheet management Dashboard.</p>
+        <h3 class="text-center text-light pb-2">Sentinals</h3>
+        <p class="text-center text-light">
+          Log in to time-sheet management Dashboard.
+        </p>
         <form>
-          <label for="username" class="form-label">Username</label>
+          <label for="username" class="form-label text-light">Username</label>
           <input
             type="text"
             class="form-control p-3 mb-4"
             name="username"
             placeholder="Username"
           />
-          <label for="username" class="form-label">Password</label>
+          <label for="username" class="form-label text-light">Password</label>
           <input
             type="password"
-            class="form-control p-3 mb-4"
+            class="form-control p-3 mb-4 text-dark"
             name="password"
             placeholder="***********"
           />
@@ -32,6 +34,12 @@
             </button>
           </div>
         </form>
+
+        <div class="text-center mt-3">
+          <p class="text-light">
+            Don't have an account? <a routerLink="/register">Sign Up</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>

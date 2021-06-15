@@ -1,0 +1,76 @@
+<div class="formBox">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img
+          src="https://i0.wp.com/esportstickers.com/wp-content/uploads/2020/07/mockup-a80c709e.png?fit=600%2C600&ssl=1"
+          height="100"
+          width="100"
+          alt="user"
+        />
+        <h3 class="text-center text-light pb-2">Sentinals</h3>
+        <p class="text-center text-light">
+          Register to Time-Sheet Management System.
+        </p>
+        <form
+          #registerForm="ngForm"
+          (ngSubmit)="onRegistrationSubmit(registerForm)"
+        >
+          <label for="firstName" class="form-label text-light"
+            >First Name</label
+          >
+          <input
+            type="text"
+            class="form-control p-3 mb-4"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+          />
+          <label for="lastName" class="form-label text-light">Last Name</label>
+          <input
+            type="text"
+            class="form-control p-3 mb-4"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+          />
+          <label for="username" class="form-label text-light">Username</label>
+          <input
+            type="text"
+            class="form-control p-3 mb-4"
+            name="username"
+            placeholder="Username"
+          />
+          <label for="emailId" class="form-label text-light">Username</label>
+          <input
+            type="email"
+            class="form-control p-3 mb-4"
+            name="emailId"
+            id="emailId"
+            placeholder="user@email.com"
+          />
+          <label for="password" class="form-label text-light">Password</label>
+          <input
+            type="password"
+            class="form-control p-3 mb-4 text-dark"
+            name="password"
+            id="password"
+            placeholder="***********"
+          />
+
+          <div class="form-group text-center pt-2">
+            <button type="submit" class="btn btn-primary p-2 registerBtn">
+              Register
+            </button>
+          </div>
+        </form>
+
+        <div class="text-center mt-3">
+          <p class="text-light">
+            Already have an account? <a routerLink="/login">Sign In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
