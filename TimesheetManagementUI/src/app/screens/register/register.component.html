@@ -8,10 +8,8 @@
           width="100"
           alt="user"
         />
-        <h3 class="text-center text-light pb-2">Sentinals</h3>
-        <p class="text-center text-light">
-          Register to Time-Sheet Management System.
-        </p>
+        <h3 class="text-center text-light pb-2">HRMS</h3>
+        <h5 class="text-center text-light">User Registration</h5>
         <form
           #registerForm="ngForm"
           (ngSubmit)="onRegistrationSubmit(registerForm)"
@@ -25,6 +23,8 @@
             name="firstName"
             id="firstName"
             placeholder="First Name"
+            ngModel
+            required
           />
           <label for="lastName" class="form-label text-light">Last Name</label>
           <input
@@ -33,6 +33,19 @@
             name="lastName"
             id="lastName"
             placeholder="Last Name"
+            ngModel
+            required
+          />
+          <label for="emailId" class="form-label text-light">Email</label>
+          <input
+            type="email"
+            class="form-control p-3 mb-4"
+            name="emailId"
+            id="emailId"
+            placeholder="user@email.com"
+            ngModel
+            required
+            email
           />
           <label for="username" class="form-label text-light">Username</label>
           <input
@@ -40,14 +53,9 @@
             class="form-control p-3 mb-4"
             name="username"
             placeholder="Username"
-          />
-          <label for="emailId" class="form-label text-light">Username</label>
-          <input
-            type="email"
-            class="form-control p-3 mb-4"
-            name="emailId"
-            id="emailId"
-            placeholder="user@email.com"
+            ngModel
+            required
+            minlength="4"
           />
           <label for="password" class="form-label text-light">Password</label>
           <input
@@ -56,10 +64,17 @@
             name="password"
             id="password"
             placeholder="***********"
+            ngModel
+            required
+            minlength="6"
           />
 
           <div class="form-group text-center pt-2">
-            <button type="submit" class="btn btn-primary p-2 registerBtn">
+            <button
+              type="submit"
+              class="btn btn-primary p-2 themeBtnLg"
+              [disabled]="registerForm.invalid"
+            >
               Register
             </button>
           </div>

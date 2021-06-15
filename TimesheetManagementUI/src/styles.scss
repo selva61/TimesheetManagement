@@ -4,3 +4,24 @@ body {
   background-color: #081215;
   font-family: "Roboto", sans-serif;
 }
+
+input.ng-invalid.ng-touched {
+  border: 1px solid red !important;
+  box-shadow: 0 4px 8px 0 rgba(155, 25, 25, 0.418),
+    0 6px 20px 0 rgba(150, 30, 30, 0.411);
+}
+input.ng-valid.ng-touched {
+  border: 1px solid green !important;
+  box-shadow: 0 4px 8px 0 rgba(40, 155, 25, 0.418),
+    0 6px 20px 0 rgba(54, 150, 30, 0.411);
+}
+
+.themeBtnLg {
+  width: 100%;
+  background-color: #ce2332 !important;
+  border: #ce2332;
+}
+
+.themeBtnLg:hover {
+  background-color: #e41526 !important;
+}
