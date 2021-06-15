@@ -1,0 +1,27 @@
+.formBox {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px 20px 30px 20px;
+  background: white;
+  border-radius: 5px;
+}
+
+.formBox img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loginBtn {
+  width: 100%;
+  background-color: #eb345c !important;
+  border: #ee2e58;
+}
+
+.loginBtn:hover {
+  background-color: #e20434 !important;
+}
