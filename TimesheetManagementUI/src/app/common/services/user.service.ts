@@ -11,6 +11,7 @@ export class UserService {
     return this.http.post('http://localhost:8080/user/login', {
       userName: username,
       password: password,
+      returnSecureToken: true,
     });
   }
 
@@ -27,6 +28,7 @@ export class UserService {
       userName: username,
       password: password,
       email: email,
+      returnSecureToken: true,
     });
   }
 }
