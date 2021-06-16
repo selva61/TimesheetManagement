@@ -9,6 +9,10 @@ import { LoginComponent } from './screens/login/login.component';
 import { UsersComponent } from './screens/users/users.component';
 import { SidebarComponent } from './common/sidebar/sidebar.component';
 import { RegisterComponent } from './screens/register/register.component';
+import { HomeComponent } from './screens/home/home.component';
+import { SharedModule } from './common/shared.module';
+import { EditProfileComponent } from './screens/edit-profile/edit-profile.component';
+import { TimeSheetComponent } from './screens/time-sheet/time-sheet.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +21,17 @@ import { RegisterComponent } from './screens/register/register.component';
     UsersComponent,
     SidebarComponent,
     RegisterComponent,
+    HomeComponent,
+    EditProfileComponent,
+    TimeSheetComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    SharedModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
